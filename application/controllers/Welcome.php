@@ -21,4 +21,16 @@ class Welcome extends CI_Controller
         $this->template->set('title', 'HOME');
         $this->template->load('template/light', 'blank');
     }
+
+    public function demo()
+    {
+        $this->template->set('title', 'HOME');
+        $this->template->load('template/light', 'demo');
+    }
+
+    public function new_prodect()
+    {
+        $this->template->set('title', 'HOME');
+        $this->template->load('template/light', 'prodect/new_prodect');
+    }
 }
